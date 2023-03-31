@@ -1,0 +1,15 @@
+//Single Line Comment
+/* MultiLine Comment*/
+
+
+/*The aim of this program is
+  to introduce comments in C language*/
+#include<stdio.h>
+int main()
+{
+    //The below statement prints the out put in the terminal or console or screen
+    //This is the output statement
+	printf("Hello World!\n");
+
+	return 0;
+}
