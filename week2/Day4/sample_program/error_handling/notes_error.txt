@@ -1,0 +1,32 @@
+1.Global Variable errno: When a function is called in C, a variable named as errno is automatically assigned a code (value) which can be used to identify the type of error that has been encountered. Its a global variable indicating the error occurred during any function call and defined in the header file errno.h.
+Different codes (values) for errno mean different types of errors. Below is a list of few different errno values and its corresponding meaning:
+errno value       Error
+1             /* Operation not permitted */
+2             /* No such file or directory */
+3             /* No such process */
+4             /* Interrupted system call */
+5             /* I/O error */
+6             /* No such device or address */
+7             /* Argument list too long */
+8             /* Exec format error */
+9             /* Bad file number */
+10            /* No child processes */
+11            /* Try again */
+12            /* Out of memory */
+13            /* Permission denied */
+
+2.perror() and strerror(): The errno value got above indicate the types of error encountered.
+If it is required to show the error description, then there are two functions that can be used to display a text message that is associated with errorno. The functions are:
+perror: It displays the string you pass to it, followed by a colon, a space, and then the textual representation of the current errno value.
+Syntax:
+void perror (const char *str)
+str: is a string containing a custom message
+to be printed before the error message itself.
+strerror(): returns a pointer to the textual representation of the current errno value.
+Syntax:
+char *strerror (int errnum)
+errnum: is the error number (errno).
+
+3.Exit Status: The C standard specifies two constants: EXIT_SUCCESS and EXIT_FAILURE, that may be passed to exit() to indicate successful or unsuccessful termination, respectively. These are macros defined in stdlib.h.
+
+4.Divide by Zero Errors: A common pitfall made by C programmers is not checking if a divisor is zero before a division command. Division by zero leads to undefined behavior, there is no C language construct that can do anything about it. Your best bet is to not divide by zero in the first place, by checking the denominator.

@@ -1,0 +1,98 @@
+Week2:
+Day1:
+1.What block of codes or logics are you going to implement as functions in your project?
+2.Compiler allocates which segment of process memory for static variable.   
+   ans: data segment
+3.When a fuction is called, activation record for that function is created in  ---------------- segment.
+   ans:Stack
+4.ls -al  in this  command how many number of command line arguments are there ?
+   ans : 2
+5.Number of formal and actual arguments for a function can vary in C language. True/False
+   ans :False
+6.printf() is alibrary function. True/False
+   ans:True
+7.int * function(void)
+   which category the above function is
+    a)without passing args., with no return
+   b)without passing args, with return
+   c)with passing args. , with no return
+   d)with passing args., with return   
+   ans: b
+ 8.Variables that are declared inside a function or in a block is called
+    a)Global Variable
+    b)Local Variable
+    ans:Local Variable	
+9.When a variable is declared as static inside the function, we have all permission to access  that variable outside the function.True/False
+   ans: False
+10.In a function for a  non static variable memory is allocated again and again during function call.True/False
+    ans: True 
+	
+	
+Day2:
+1.The index of an array can be negative or positive.True/False
+    ans :False
+2.int A[20] is an character array.True/False
+   ans: False
+3.size of an int arr[4]  is 4.True/False
+   ans:False
+4.Length of and char arr[4] is 4.True/False
+   ans:True
+5.arr[] = {1}; the length of the array is -----------
+6.we can access the array elements using while loop.True/False
+   ans:True
+7.In arr[2][3] 2 represents column and 3 represnts rows.True/False
+   ans:False
+8.char arr[4] = {'a','b','c','\0'}; arr[2] is ----------------
+9.we can print value of arr[3]  using 3[arr].True/False
+   ans:True
+10. for a two dimensional array of name A ,how to print the address of the elements?
+     a. (*(A+i)+j) 
+     b. *(*(A+i)+j)
+     c. (A+i+j)
+     d. (*A+i+j)
+    ans:a
+
+Day3:
+1.Without pointer we cannot access the Heap Segment of the memory.True/False
+   ans:True
+2.pointer multiplication is allowed in C language.True/False
+   ans: False
+3.int a; char*ptr;ptr = &a;     valid statement or not valid statement.  
+   ans:not valid
+4.size of pointer in 32 bit compiler is ................
+    a.4 bytes b. 8 bytes c.32 bits
+5.size of interger pointer and size of array pointers are equal.True/False
+   ans:True
+6.calloc function accepts two arguments and return void*.True/False
+   ans:True
+7.C will automatically free the Heap memory which was allocate.True/False
+   ans:False
+8.By using double pointer can we store {"string1","string2","string3"}.True/False
+   ans:True
+9.double pointers and array of pointers are similar.True/False
+  ans:True
+10.To return multiple values from a function we can use pointer.True/False
+  ans:True  
+  
+ Day4:
+ 1.Array of characters which is terminated by '\0' is -------------
+    ans : string
+	
+2.Only buy using loop we will be able to print the string.True/False
+   ans:False
+3.seven bits are suffficient to represent the ASCII code.True/False
+   ans:True
+ 4.strupr() is one of the library function.True/False
+   ans:True
+ 5.strcat library function is used for .................
+    ans:string concatenation
+6.typedef char* ptr;
+  ptr a, b, c;
+  #define PTR char*
+  PTR a, b, c;
+    both typdef and #define statements do the same work.True/False
+	ans:False
+7.enum ={a=1,b,c,d,e,f} the value of f is 6.True/False
+   ans:True
+8.Write a logic to print only vowels from a string?
+9.write a logic to find special character
